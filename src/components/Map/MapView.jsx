@@ -7,7 +7,7 @@ export default function MapView({ zones, points, onUpdateZones, onUpdatePoints, 
   // Simple container with 70/30 layout in CSS
   return (
     <div className="gp-map-wrap">
-      <MapContainer center={[40.4168, -3.7038]} zoom={12} style={{ height: '100%', width: '100%' }}>
+      <MapContainer center={[-33.3, -66.3383]} zoom={12} style={{ height: '100%', width: '100%' }}>
         <TileLayer
           attribution='© OpenStreetMap contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
