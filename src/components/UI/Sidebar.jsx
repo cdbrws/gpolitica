@@ -1,4 +1,7 @@
 import React from 'react'
+import ZoneForm from '../Admin/ZoneForm.jsx'
+import PointForm from '../Admin/PointForm.jsx'
+import ActionForm from '../Admin/ActionForm.jsx'
 
 export default function Sidebar({ zones, points, onSelectZone, onSelectPoint, selected }) {
   return (
@@ -23,6 +26,12 @@ export default function Sidebar({ zones, points, onSelectZone, onSelectPoint, se
             </li>
           ))}
         </ul>
+      </section>
+      <section>
+        <h4>Admin</h4>
+        <ZoneForm />
+        <PointForm />
+        <ActionForm />
       </section>
     </aside>
   )
